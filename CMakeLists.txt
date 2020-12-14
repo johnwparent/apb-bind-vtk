@@ -47,11 +47,10 @@ foreach(target ${VTK_LIBRARIES})
 endforeach()
 
 # Setup APB for each VTK Common Component
-# We will produce on APB generated module per VTKCommon Component
-#
+# We will produce an APB generated module per VTKCommon Component
+
 
 include(APB_Bind_Target.cmake)
-apb_add_module(VTK::CommonCore)
-# foreach(target ${VTKCommonTargets_})
-#     apb_add_module(${target})
-# endforeach()
+foreach(target ${VTKCommonTargets_})
+    apb_add_module(${target})
+endforeach()
