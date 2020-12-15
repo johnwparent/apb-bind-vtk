@@ -1,8 +1,9 @@
-classes:
-  vtkObjectBase:
-    file: C:/vtk_apb/src/Common/Core/vtkObjectBase.h
-    customization:
-      blacklist:
-        functions: []
-        members: []
-        operators: [new, del]
+files:
+  C:/vtk_apb/src/Common/Core/vtkObjectBase.h
+  classes:
+    vtkObjectBase:
+      customization:
+        blacklist:
+          functions: []
+          members: []
+          operators: [new, del]

@@ -1,5 +1,7 @@
-classes:
-  vtkNamedColors:
-    file: C:/vtk_apb/src/Common/Color/vtkNamedColors.h
-  vtkColorSeries:
-    file: C:/vtk_apb/src/Common/Color/vtkColorSeries.h
+files:
+  C:/vtk_apb/src/Common/Color/vtkNamedColors.h:
+    classes:
+      vtkNamedColors:
+  C:/vtk_apb/src/Common/Color/vtkColorSeries.h:
+    classes:
+      vtkColorSeries:
