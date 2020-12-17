@@ -10,7 +10,7 @@ include(FetchContent)
 FetchContent_Declare(
     autopybind11
     GIT_REPOSITORY https://gitlab.kitware.com/autopybind11/autopybind11.git
-    GIT_TAG ddda03ffe8294fcca1656adefe5c690ebf88f7b6
+    GIT_TAG 9b84300e4416fb0fec3429fae96b7593ed9ccda4
     )
 
 # Import APB into current CMake context
@@ -51,6 +51,7 @@ endforeach()
 
 
 include(APB_Bind_Target.cmake)
-foreach(target ${VTKCommonTargets_})
-    apb_add_module(${target})
-endforeach()
+apb_add_module(VTK::CommonCore)
+# foreach(target ${VTKCommonTargets_})
+#     apb_add_module(${target})
+# endforeach()
